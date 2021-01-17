@@ -9,6 +9,45 @@
 .errorMessage {
     color: red;
 }
+
+.item {
+    display: flex;
+}
+
+.nameInput {
+    height: 40px;
+    width: 300px;
+    border: 2px solid green;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: lightgreen;
+}
+.nameInput input{
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #bbfff3;
+
+}
+.nameInput button{
+    margin-left: 10px;
+    background-color: red;
+    height: 30px;
+    width: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
 .totalUsers {
+    margin-left: 5px;
+    font-size: 30px;
+    border: 2px solid green;
+    height: 40px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: lightgreen;
+    text-align: center;
+    vertical-align: middle;
 
 }
