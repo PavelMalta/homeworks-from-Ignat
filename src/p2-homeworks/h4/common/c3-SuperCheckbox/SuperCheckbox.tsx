@@ -27,17 +27,16 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     const finalInputClassName = `${s.checkbox} ${className ? className : ""}`;
 
     return (
-        <label>
+        <label className={s.label}>
             <input
                 type={"checkbox"}
                 onChange={onChangeCallback}
                 className={finalInputClassName}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
             />
-            <span className={s.fake}></span>
-            {children && <span className={s.spanClassName}>{children}</span>}
+            {children ? <span className={s.spanClassName}>{children}</span> : <span className={s.spanClassName}></span>}
         </label> // благодаря label нажатие на спан передастся в инпут
     );
-}
+};
 
 export default SuperCheckbox;
