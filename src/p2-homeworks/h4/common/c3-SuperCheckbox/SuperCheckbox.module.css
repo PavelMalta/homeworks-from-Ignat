@@ -1,5 +1,35 @@
 .checkbox {
+    display: none;
+}
 
+.fake {
+    margin:10px 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    position: relative;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.4);
+
+}
+.fake::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #777674;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before {
+    opacity: 1;
 }
 
 .spanClassName {
