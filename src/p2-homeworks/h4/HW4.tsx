@@ -24,16 +24,24 @@ function HW4() {
             homeworks 4
 
             <div className={s.column}>
-                {/*should work (должно работать)*/}
                 <SuperInputText
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    /*className={s.blue} */// проверьте, рабоет ли смешивание классов
+                    // spanClassName={s.testSpanError}
                 />
 
-                {/*should work (должно работать)*/}
+                <SuperInputText
+                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                />
+
+                {/*----------------------------------------------------*/}
+
+                <SuperButton>
+                    default
+                </SuperButton>
+
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
@@ -41,7 +49,12 @@ function HW4() {
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                {/*should work (должно работать)*/}
+                <SuperButton disabled>
+                    disabled
+                </SuperButton>
+
+                {/*----------------------------------------------------*/}
+
                 <SuperCheckbox
                     checked={checked}
                     onChangeChecked={setChecked}
