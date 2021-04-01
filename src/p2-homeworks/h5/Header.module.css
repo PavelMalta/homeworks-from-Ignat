@@ -1,3 +1,16 @@
-.pre_junior{
+.header{
 
+}
+
+.page {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.page:hover {
+    color: blue;
+}
+
+.active {
+    color: tomato;
 }
