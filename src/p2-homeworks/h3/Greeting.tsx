@@ -23,7 +23,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     <SuperInputText value={name} onChange={setNameCallback} error={error}/>
                 </div>
                 <div className={s.button}>
-                    <SuperButton onClick={addUser}>add</SuperButton>
+                    <SuperButton onClick={addUser} disabled={inputClass}>add</SuperButton>
                 </div>
             <div className={s.totalUsers}>{totalUsers}</div>
         </div>
