@@ -1,0 +1,21 @@
+.container {
+    padding: 15px;
+}
+
+.item {
+    font-size: 30px;
+    border: 2px solid #777674;
+    border-radius: 5px;
+    position: relative;
+    padding: 0 5px;
+    }
+
+.item::before {
+    content: "push";
+    position: absolute;
+    font-size: 13px;
+    color: #777674;
+    top: -12px;
+    left: 10px;
+    background-color: white;
+}
