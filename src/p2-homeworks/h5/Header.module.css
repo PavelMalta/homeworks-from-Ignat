@@ -2,7 +2,7 @@
     display: flex;
     width: 380px;
     transition-duration: 500ms;
-    transform: translate(-290px);
+    transform: translate(-260px);
 }
 
 .header:hover {

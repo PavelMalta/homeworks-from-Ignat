@@ -1,0 +1,15 @@
+.select {
+    width: 150px;
+    padding: 5px 50px 5px 5px;
+    cursor: pointer;
+    background-color: #777674;
+    color: #eeeeee;
+}
+
+.option {
+    background-color: darkgrey;
+}
+
+.option:checked {
+    background-color: #777674;
+}
