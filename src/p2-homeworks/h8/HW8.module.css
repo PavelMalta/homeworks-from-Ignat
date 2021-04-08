@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 10px;
+}
